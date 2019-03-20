@@ -18,13 +18,12 @@ function nowServing(currentline) {
 function currentLine(currentline) {
   var len = currentline.length
   var list = []
-  var spacelist = []
-  
+
   if (currentline.length > 0){
     for (var i = 0; i < len; i++) { 
       list.push(i+1 + ". " + currentline[i])
     }
-    var spacelist = list.join(', ')
+    var spacelist = list.join(', ');
     return "The line is currently: "+spacelist;
   } else {
     return "The line is currently empty."
